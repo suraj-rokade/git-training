@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DevOps Internal Training | Acme Cloud</title>
+  <meta name="description" content="Company internal DevOps training program: schedule, curriculum, trainers, and registration." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.75); }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-slate-50 to-slate-100 text-slate-800">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 glass border-b border-slate-200/70">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#" class="flex items-center gap-2 font-semibold tracking-tight">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-2xl bg-slate-900 text-white">D</span>
+          <span class="text-slate-900">DevOps Internal Training</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a class="hover:text-slate-900" href="#about">About</a>
+          <a class="hover:text-slate-900" href="#curriculum">Curriculum</a>
+          <a class="hover:text-slate-900" href="#schedule">Schedule</a>
+          <a class="hover:text-slate-900" href="#trainers">Trainers</a>
+          <a class="hover:text-slate-900" href="#register">Register</a>
+          <a class="hover:text-slate-900" href="#faq">FAQ</a>
+        </nav>
+        <a href="#register" class="hidden md:inline-flex rounded-2xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-slate-400">Enroll</a>
+        <button class="md:hidden inline-flex items-center rounded-xl border border-slate-300 px-3 py-2 text-sm" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
+      <nav class="mx-auto max-w-7xl px-4 py-3 text-sm font-medium">
+        <a class="block py-2" href="#about">About</a>
+        <a class="block py-2" href="#curriculum">Curriculum</a>
+        <a class="block py-2" href="#schedule">Schedule</a>
+        <a class="block py-2" href="#trainers">Trainers</a>
+        <a class="block py-2" href="#register">Register</a>
+        <a class="block py-2" href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-14 pb-16 sm:pt-20 sm:pb-24">
+      <div class="grid items-center gap-10 md:grid-cols-2">
+        <div>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900">Level up our delivery with modern <span class="underline decoration-amber-400 decoration-4 underline-offset-4">DevOps</span></h1>
+          <p class="mt-4 text-lg text-slate-600">A hands-on internal program covering CI/CD, IaC, observability, security, and culture. Built by engineers, for engineers.</p>
+          <ul class="mt-6 space-y-2 text-slate-700">
+            <li class="flex items-start gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-emerald-500"></span> 6-week cohort • ~4–6 hrs/week • Live & self-paced</li>
+            <li class="flex items-start gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-emerald-500"></span> Labs in sandboxed cloud accounts</li>
+            <li class="flex items-start gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-emerald-500"></span> Certificate + internal badge on completion</li>
+          </ul>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#register" class="inline-flex items-center rounded-2xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow hover:opacity-95">Join the next cohort</a>
+            <a href="#curriculum" class="inline-flex items-center rounded-2xl border border-slate-300 px-5 py-3 text-sm font-semibold hover:bg-white">View curriculum</a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="rounded-2xl bg-slate-50 p-4">
+                <h3 class="text-sm font-semibold">Tooling</h3>
+                <p class="mt-1 text-sm text-slate-600">Git • GitHub • Jenkins • GitHub Actions • Argo CD • Docker • Kubernetes</p>
+              </div>
+              <div class="rounded-2xl bg-slate-50 p-4">
+                <h3 class="text-sm font-semibold">Cloud & IaC</h3>
+                <p class="mt-1 text-sm text-slate-600">AWS/Azure/GCP • Terraform • Helm • Ansible</p>
+              </div>
+              <div class="rounded-2xl bg-slate-50 p-4">
+                <h3 class="text-sm font-semibold">Observability</h3>
+                <p class="mt-1 text-sm text-slate-600">Prometheus • Grafana • ELK • OpenTelemetry</p>
+              </div>
+              <div class="rounded-2xl bg-slate-50 p-4">
+                <h3 class="text-sm font-semibold">DevSecOps</h3>
+                <p class="mt-1 text-sm text-slate-600">SAST • DAST • SBOM • Supply‑chain</p>
+              </div>
+            </div>
+          </div>
+          <p class="mt-3 text-xs text-slate-500">* Icons and logos are placeholders—replace with your company stack.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 md:grid-cols-3">
+        <div class="md:col-span-2">
+          <h2 class="text-2xl font-bold text-slate-900">About the program</h2>
+          <p class="mt-3 text-slate-700">This internal training accelerates our delivery by aligning teams on DevOps fundamentals and advanced practices. Expect short lectures, live demos, and guided labs mapped to our internal tooling and environments.</p>
+          <ul class="mt-4 grid gap-3 sm:grid-cols-2">
+            <li class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"><span class="font-semibold">Outcomes:</span> shipping faster, safer, and with confidence.</li>
+            <li class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"><span class="font-semibold">Audience:</span> engineers, SREs, QA, infra, security, PMs.</li>
+            <li class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"><span class="font-semibold">Format:</span> hybrid (live + self-paced), labs, capstone.</li>
+            <li class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"><span class="font-semibold">Prereqs:</span> basic Git, scripting, cloud fundamentals.</li>
+          </ul>
+        </div>
+        <aside class="md:col-span-1">
+          <div class="rounded-3xl border border-amber-200 bg-amber-50 p-5">
+            <h3 class="font-semibold">Next cohort</h3>
+            <p class="mt-1 text-sm">Starts <span class="font-semibold">Oct 7</span> • Ends Nov 15</p>
+            <p class="text-sm">Location: Hybrid (Mumbai + Zoom)</p>
+            <a href="#register" class="mt-4 inline-flex rounded-xl bg-amber-500 px-4 py-2 text-sm font-semibold text-white hover:opacity-95">Reserve a seat</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curriculum -->
+  <section id="curriculum" class="py-16 sm:py-20 bg-white border-y border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold text-slate-900">Curriculum</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Week cards -->
+        <article class="rounded-2xl border border-slate-200 p-5 shadow-sm">
+          <h3 class="font-semibold">Week 1 — DevOps Culture & Git</h3>
+          <ul class="mt-2 list-disc pl-5 text-sm text-slate-700">
+            <li>Flow, feedback, continuous learning</li>
+            <li>Git branching, PRs, code reviews</li>
+            <li>Hands-on: repos, hooks, protected branches</li>
+          </ul>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-5 shadow-sm">
+          <h3 class="font-semibold">Week 2 — CI/CD Essentials</h3>
+          <ul class="mt-2 list-disc pl-5 text-sm text-slate-700">
+            <li>Pipelines, runners, artifacts</li>
+            <li>Hands-on: build & test matrix</li>
+            <li>Deploy strategies: blue/green, canary</li>
+          </ul>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-5 shadow-sm">
+          <h3 class="font-semibold">Week 3 — Containers & K8s</h3>
+          <ul class="mt-2 list-disc pl-5 text-sm text-slate-700">
+            <li>Dockerfiles, image scanning</li>
+            <li>Kubernetes basics, Helm</li>
+            <li>Hands-on: app -> cluster</li>
+          </ul>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-5 shadow-sm">
+          <h3 class="font-semibold">Week 4 — IaC & Environments</h3>
+          <ul class="mt-2 list-disc pl-5 text-sm text-slate-700">
+            <li>Terraform modules, state, drift</li>
+            <li>Secrets & config management</li>
+            <li>Hands-on: staging env pipeline</li>
+          </ul>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-5 shadow-sm">
+          <h3 class="font-semibold">Week 5 — Observability</h3>
+          <ul class="mt-2 list-disc pl-5 text-sm text-slate-700">
+            <li>Metrics, logs, traces (OTel)</li>
+            <li>SLOs, error budgets</li>
+            <li>Hands-on: dashboards & alerts</li>
+          </ul>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-5 shadow-sm">
+          <h3 class="font-semibold">Week 6 — DevSecOps & Capstone</h3>
+          <ul class="mt-2 list-disc pl-5 text-sm text-slate-700">
+            <li>Threat modeling, supply chain</li>
+            <li>SBOMs, policy-as-code</li>
+            <li>Capstone: CI/CD to prod-like env</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section id="schedule" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-4">
+        <h2 class="text-2xl font-bold text-slate-900">Live sessions schedule</h2>
+        <div class="text-sm text-slate-600">Timezone: IST (UTC+5:30)</div>
+      </div>
+      <div class="mt-4 overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="min-w-full divide-y divide-slate-200">
+          <thead class="bg-slate-50">
+            <tr>
+              <th class="px-4 py-3 text-left text-sm font-semibold">Date</th>
+              <th class="px-4 py-3 text-left text-sm font-semibold">Topic</th>
+              <th class="px-4 py-3 text-left text-sm font-semibold">Mode</th>
+              <th class="px-4 py-3 text-left text-sm font-semibold">Owner</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr>
+              <td class="px-4 py-3 text-sm">Mon, Oct 7</td>
+              <td class="px-4 py-3 text-sm">Kickoff + Culture</td>
+              <td class="px-4 py-3 text-sm">Hybrid</td>
+              <td class="px-4 py-3 text-sm">Priya (Eng Enablement)</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 text-sm">Thu, Oct 10</td>
+              <td class="px-4 py-3 text-sm">Git Workflows</td>
+              <td class="px-4 py-3 text-sm">Remote</td>
+              <td class="px-4 py-3 text-sm">Arjun (Platform)</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 text-sm">Mon, Oct 14</td>
+              <td class="px-4 py-3 text-sm">CI/CD Foundations</td>
+              <td class="px-4 py-3 text-sm">Remote</td>
+              <td class="px-4 py-3 text-sm">Sara (DevEx)</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 text-sm">Thu, Oct 17</td>
+              <td class="px-4 py-3 text-sm">Kubernetes Basics</td>
+              <td class="px-4 py-3 text-sm">Onsite</td>
+              <td class="px-4 py-3 text-sm">Mohit (SRE)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-3 text-xs text-slate-500">* Swap in your actual dates, topics, and owners.</p>
+    </div>
+  </section>
+
+  <!-- Trainers -->
+  <section id="trainers" class="py-16 sm:py-20 bg-white border-y border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold text-slate-900">Meet the trainers</h2>
+      <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Trainer card template -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <div class="h-24 w-24 rounded-2xl bg-slate-200"></div>
+          <h3 class="mt-4 font-semibold">Priya Sharma</h3>
+          <p class="text-sm text-slate-600">Engineering Enablement Lead</p>
+          <p class="mt-2 text-sm text-slate-700">Focus: Git, collaboration, lean flow.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <div class="h-24 w-24 rounded-2xl bg-slate-200"></div>
+          <h3 class="mt-4 font-semibold">Arjun Mehta</h3>
+          <p class="text-sm text-slate-600">Platform Engineer</p>
+          <p class="mt-2 text-sm text-slate-700">Focus: CI/CD, infrastructure as code.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <div class="h-24 w-24 rounded-2xl bg-slate-200"></div>
+          <h3 class="mt-4 font-semibold">Sara Fernandes</h3>
+          <p class="text-sm text-slate-600">Developer Experience</p>
+          <p class="mt-2 text-sm text-slate-700">Focus: pipelines, testing strategies.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <div class="h-24 w-24 rounded-2xl bg-slate-200"></div>
+          <h3 class="mt-4 font-semibold">Mohit Gupta</h3>
+          <p class="text-sm text-slate-600">SRE</p>
+          <p class="mt-2 text-sm text-slate-700">Focus: K8s, observability, SLOs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration -->
+  <section id="register" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold text-slate-900">Register for the next cohort</h2>
+      <p class="mt-2 text-slate-700">Fill the form below. We’ll confirm by email and add you to the training Slack channel.</p>
+      <form id="regForm" class="mt-6 space-y-4 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm" novalidate>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div>
+            <label class="block text-sm font-medium" for="name">Full name</label>
+            <input id="name" name="name" required class="mt-1 w-full rounded-xl border border-slate-300 p-2 focus:outline-none focus:ring-2 focus:ring-slate-400" placeholder="Ada Lovelace" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium" for="email">Work email</label>
+            <input id="email" name="email" type="email" required class="mt-1 w-full rounded-xl border border-slate-300 p-2 focus:outline-none focus:ring-2 focus:ring-slate-400" placeholder="ada@company.com" />
+          </div>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div>
+            <label class="block text-sm font-medium" for="role">Role</label>
+            <select id="role" name="role" class="mt-1 w-full rounded-xl border border-slate-300 p-2">
+              <option>Software Engineer</option>
+              <option>Platform / Infra</option>
+              <option>SRE</option>
+              <option>QA / Test</option>
+              <option>Security</option>
+              <option>Product / PM</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium" for="location">Location</label>
+            <input id="location" name="location" class="mt-1 w-full rounded-xl border border-slate-300 p-2" placeholder="Mumbai / Remote" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-medium" for="goals">Learning goals</label>
+          <textarea id="goals" name="goals" rows="3" class="mt-1 w-full rounded-xl border border-slate-300 p-2" placeholder="e.g., k8s deployments, Terraform workflows, SLOs"></textarea>
+        </div>
+        <div class="flex items-center gap-2">
+          <input id="policy" type="checkbox" required class="h-4 w-4 rounded border-slate-300" />
+          <label for="policy" class="text-sm">I agree to the internal training policy.</label>
+        </div>
+        <div class="flex items-center gap-3">
+          <button type="submit" class="inline-flex items-center rounded-2xl bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow hover:opacity-95">Submit</button>
+          <p id="formMsg" class="text-sm"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Resources -->
+  <section id="resources" class="py-16 sm:py-20 bg-white border-y border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold text-slate-900">Resources</h2>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <a class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover:shadow" href="#" aria-label="Engineering Playbook">
+          <h3 class="font-semibold">Engineering Playbook</h3>
+          <p class="mt-1 text-sm text-slate-700">Our conventions, branching strategy, and review checklists.</p>
+        </a>
+        <a class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover:shadow" href="#" aria-label="Platform Onboarding Guide">
+          <h3 class="font-semibold">Platform Onboarding</h3>
+          <p class="mt-1 text-sm text-slate-700">Access, sandboxes, secrets, and guardrails.</p>
+        </a>
+        <a class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover:shadow" href="#" aria-label="Security & Compliance">
+          <h3 class="font-semibold">Security & Compliance</h3>
+          <p class="mt-1 text-sm text-slate-700">SBOMs, scanning, policies, and incident response.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold text-slate-900">FAQ</h2>
+      <div class="mt-6 space-y-4">
+        <details class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+          <summary class="cursor-pointer font-medium">Who can enroll?</summary>
+          <p class="mt-2 text-sm text-slate-700">All full-time employees and long-term contractors. Prior experience with Git and a programming language is recommended.</p>
+        </details>
+        <details class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+          <summary class="cursor-pointer font-medium">What’s the time commitment?</summary>
+          <p class="mt-2 text-sm text-slate-700">Expect ~4–6 hours/week across lectures, labs, and the capstone project.</p>
+        </details>
+        <details class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+          <summary class="cursor-pointer font-medium">Do I get a certificate?</summary>
+          <p class="mt-2 text-sm text-slate-700">Yes—on completing all labs and the capstone, you’ll receive a company-recognized certificate and an internal badge.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <p class="text-sm text-slate-600">© <span id="year"></span> Acme Cloud — Internal DevOps Training</p>
+        <div class="text-sm text-slate-600">Questions? <a href="mailto:enablement@company.com" class="font-medium text-slate-900 underline">enablement@company.com</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        const open = menu.classList.toggle('hidden');
+        btn.setAttribute('aria-expanded', String(!open));
+      });
+    }
+
+    // Registration form (client-side demo only)
+    const form = document.getElementById('regForm');
+    const msg = document.getElementById('formMsg');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const data = Object.fromEntries(new FormData(form).entries());
+        if (!data.name || !data.email || !document.getElementById('policy').checked) {
+          msg.textContent = 'Please complete required fields.';
+          msg.className = 'text-sm text-red-600';
+          return;
+        }
+        msg.textContent = 'Thanks! Your registration has been recorded.';
+        msg.className = 'text-sm text-emerald-600';
+        form.reset();
+      });
+    }
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
